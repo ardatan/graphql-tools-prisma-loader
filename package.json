@@ -52,7 +52,7 @@
     "ci:lint": "cross-env \"ESLINT_USE_FLAT_CONFIG=false\" eslint --ext .ts \"./src/**/*.ts\" --output-file eslint_report.json --format json",
     "clean": "rm -rf dist",
     "lint": "cross-env \"ESLINT_USE_FLAT_CONFIG=false\" eslint --ext .ts \"./src/**/*.ts\"",
-    "postinstall": "husky install",
+    "postinstall": "patch-package && husky install",
     "prebuild": "yarn clean",
     "prerelease": "yarn build && bob prepack",
     "prettier": "yarn prettier:check --write",

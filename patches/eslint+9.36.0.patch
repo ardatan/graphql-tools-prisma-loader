@@ -1,0 +1,13 @@
+diff --git a/node_modules/eslint/lib/rules/no-unused-expressions.js b/node_modules/eslint/lib/rules/no-unused-expressions.js
+index 3c530e6..b47645f 100644
+--- a/node_modules/eslint/lib/rules/no-unused-expressions.js
++++ b/node_modules/eslint/lib/rules/no-unused-expressions.js
+@@ -87,7 +87,7 @@ module.exports = {
+ 				allowTaggedTemplates,
+ 				enforceForJSX,
+ 				ignoreDirectives,
+-			},
++			} = {},
+ 		] = context.options;
+ 
+ 		/**
