@@ -52,13 +52,15 @@
     "ci:lint": "cross-env \"ESLINT_USE_FLAT_CONFIG=false\" eslint --ext .ts \"./src/**/*.ts\" --output-file eslint_report.json --format json",
     "clean": "rm -rf dist",
     "lint": "cross-env \"ESLINT_USE_FLAT_CONFIG=false\" eslint --ext .ts \"./src/**/*.ts\"",
-    "lint:prettier": "prettier --ignore-path .gitignore --ignore-path .prettierignore --cache --check .",
     "postinstall": "husky install",
     "prebuild": "yarn clean",
     "prerelease": "yarn build && bob prepack",
     "prettier": "yarn lint:prettier --write",
+    "prettier:check": "prettier --ignore-path .gitignore --ignore-path .prettierignore --cache --check .",
     "release": "changeset publish",
-    "test": "jest --no-watchman"
+    "test": "jest --no-watchman",
+    "test:leaks": "jest --detectOpenHandles --detectLeaks --no-watchman --runInBand --forceExit",
+    "ts:check": "tsc --noEmit"
   },
   "peerDependencies": {
     "graphql": "^14.0.0 || ^15.0.0 || ^16.0.0 || ^17.0.0"
