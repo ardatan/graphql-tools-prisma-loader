@@ -1,10 +1,10 @@
-import { writeFileSync } from 'fs';
+import { readFileSync, writeFileSync } from 'fs';
 import { resolve } from 'path';
 import { argv, cwd } from 'process';
 
 const pkgPath = resolve(cwd(), './package.json');
-
-const pkg = require(pkgPath);
+const pkgStr = readFileSync(pkgPath, 'utf8');
+const pkg = JSON.parse(pkgStr);
 
 const version = argv[2];
 
