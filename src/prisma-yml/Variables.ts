@@ -125,8 +125,10 @@ export class Variables {
         } else {
           const errorMessage = [
             'Trying to populate non string value into',
-            ` a string for variable ${matchedString}.`,
+            ` a string for an environment variable.`,
             ' Please make sure the value of the property is a string.',
+            // Optionally, reference the variable name without its value:
+            // ` Variable reference: ${typeof matchedString === 'string' ? matchedString.replace(/=.*/, '= [REDACTED]') : ''}`
           ].join('');
           this.out.warn(this.out.getErrorPrefix(this.fileName, 'warning') + errorMessage);
         }
