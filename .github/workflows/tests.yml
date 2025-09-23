@@ -110,6 +110,8 @@ jobs:
           timeout_minutes: 10
           max_attempts: 5
           command: yarn test:leaks --ci
+          env:
+            NODE_OPTIONS: '--experimental-require-module'
 
   test_esm:
     name: ESM Test

@@ -55,7 +55,7 @@
     "postinstall": "husky install",
     "prebuild": "yarn clean",
     "prerelease": "yarn build && bob prepack",
-    "prettier": "yarn lint:prettier --write",
+    "prettier": "yarn prettier:check --write",
     "prettier:check": "prettier --ignore-path .gitignore --ignore-path .prettierignore --cache --check .",
     "release": "changeset publish",
     "test": "jest --no-watchman",

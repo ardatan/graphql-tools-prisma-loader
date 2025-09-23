@@ -1,5 +1,6 @@
 import { resolve } from 'path';
 import { fileURLToPath } from 'url';
+
 const CI = !!process.env.CI;
 
 const ROOT_DIR = fileURLToPath(new URL('./', import.meta.url));
