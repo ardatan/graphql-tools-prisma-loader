@@ -1,5 +1,22 @@
 # @graphql-tools/prisma-loader
 
+## 9.0.0
+
+### Major Changes
+
+- [#1](https://github.com/ardatan/graphql-tools-prisma-loader/pull/1)
+  [`85f16e4`](https://github.com/ardatan/graphql-tools-prisma-loader/commit/85f16e43dab99563a8ed8454562b911ecd648135)
+  Thanks [@renovate](https://github.com/apps/renovate)! - Drop Node 18 support
+
+### Patch Changes
+
+- [#1](https://github.com/ardatan/graphql-tools-prisma-loader/pull/1)
+  [`a13c954`](https://github.com/ardatan/graphql-tools-prisma-loader/commit/a13c95457b0673f4d2e9090ee90f32d69048054b)
+  Thanks [@renovate](https://github.com/apps/renovate)! - dependencies updates:
+  - Updated dependency
+    [`@graphql-tools/url-loader@^9.0.0` ↗︎](https://www.npmjs.com/package/@graphql-tools/url-loader/v/9.0.0)
+    (from `^8.0.15`, in `dependencies`)
+
 ## 8.0.17
 
 ### Patch Changes
@@ -146,7 +163,6 @@
 - [#5304](https://github.com/ardatan/graphql-tools/pull/5304)
   [`a97b78f2`](https://github.com/ardatan/graphql-tools/commit/a97b78f2bef939c3bd34953f9ad41a618b2a2376)
   Thanks [@renovate](https://github.com/apps/renovate)! - dependencies updates:
-
   - Updated dependency
     [`http-proxy-agent@^7.0.0` ↗︎](https://www.npmjs.com/package/http-proxy-agent/v/7.0.0) (from
     `^6.0.0`, in `dependencies`)
@@ -188,7 +204,6 @@
 - [#5251](https://github.com/ardatan/graphql-tools/pull/5251)
   [`58a18e4d`](https://github.com/ardatan/graphql-tools/commit/58a18e4d60dfb43dff2ebdeca2865da0bbaa1c16)
   Thanks [@renovate](https://github.com/apps/renovate)! - dependencies updates:
-
   - Updated dependency
     [`http-proxy-agent@^6.0.0` ↗︎](https://www.npmjs.com/package/http-proxy-agent/v/6.0.0) (from
     `^5.0.0`, in `dependencies`)
@@ -214,7 +229,6 @@
 - [#5166](https://github.com/ardatan/graphql-tools/pull/5166)
   [`807c9b54`](https://github.com/ardatan/graphql-tools/commit/807c9b547369903575c1182f891e9a89aadbaeb8)
   Thanks [@renovate](https://github.com/apps/renovate)! - dependencies updates:
-
   - Updated dependency
     [`graphql-request@^6.0.0` ↗︎](https://www.npmjs.com/package/graphql-request/v/6.0.0) (from
     `^5.0.0`, in `dependencies`)
@@ -629,7 +643,6 @@
 - [#4678](https://github.com/ardatan/graphql-tools/pull/4678)
   [`1b0988a4`](https://github.com/ardatan/graphql-tools/commit/1b0988a42ca83a21e5a30284f83bd78ecbaf2e90)
   Thanks [@renovate](https://github.com/apps/renovate)! - dependencies updates:
-
   - Updated dependency
     [`graphql-request@^5.0.0` ↗︎](https://www.npmjs.com/package/graphql-request/v/null) (from
     `^4.0.0`, in `dependencies`)
@@ -701,7 +714,6 @@
 - [#4640](https://github.com/ardatan/graphql-tools/pull/4640)
   [`27bdc237`](https://github.com/ardatan/graphql-tools/commit/27bdc23713a5176485ac940fc5431256b4f2de8d)
   Thanks [@ardatan](https://github.com/ardatan)! - dependencies updates:
-
   - Updated dependency
     [`@graphql-tools/url-loader@7.13.7` ↗︎](https://www.npmjs.com/package/@graphql-tools/url-loader/v/7.13.7)
     (was `7.13.6`, in `dependencies`)
@@ -1079,7 +1091,6 @@
 ### Major Changes
 
 - 1c039fd3: BREAKING CHANGE
-
   - Now each loader handles glob patterns internally and returns an array of `Source` object instead
     of single `Source`
 
