@@ -109,9 +109,7 @@ jobs:
         with:
           timeout_minutes: 10
           max_attempts: 5
-          command:
-            node --experimental-require-module node_modules/.bin/jest --detectOpenHandles
-            --detectLeaks --no-watchman --runInBand --forceExit
+          command: yarn test:leaks --ci
 
   test_esm:
     name: ESM Test
