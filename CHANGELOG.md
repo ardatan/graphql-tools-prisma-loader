@@ -1,5 +1,13 @@
 # @graphql-tools/prisma-loader
 
+## 9.0.1
+
+### Patch Changes
+
+- [#8](https://github.com/ardatan/graphql-tools-prisma-loader/pull/8)
+  [`9b200bb`](https://github.com/ardatan/graphql-tools-prisma-loader/commit/9b200bb414d0fe046042b4885e5901070659d00b)
+  Thanks [@ardatan](https://github.com/ardatan)! - Avoid logging the environment variables directly
+
 ## 9.0.0
 
 ### Major Changes
