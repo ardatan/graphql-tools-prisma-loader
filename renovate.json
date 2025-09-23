@@ -1,0 +1,26 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["github>the-guild-org/shared-config:renovate"],
+  "automerge": true,
+  "major": {
+    "automerge": false
+  },
+  "packageRules": [
+    {
+      "excludePackagePatterns": [
+        "@changesets/*",
+        "@whatwg-node/*",
+        "typescript",
+        "typedoc*",
+        "^@theguild/",
+        "@graphql-inspector/core",
+        "next",
+        "husky"
+      ],
+      "matchPackagePatterns": ["*"],
+      "matchUpdateTypes": ["minor", "patch"],
+      "groupName": "all non-major dependencies",
+      "groupSlug": "all-minor-patch"
+    }
+  ]
+}
