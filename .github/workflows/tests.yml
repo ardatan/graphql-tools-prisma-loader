@@ -106,12 +106,12 @@ jobs:
       - name: Test
         if: ${{ matrix.node-version < 20 }}
         uses: nick-fields/retry@v3
+        env:
+          NODE_OPTIONS: '--experimental-require-module'
         with:
           timeout_minutes: 10
           max_attempts: 5
           command: yarn test:leaks --ci
-          env:
-            NODE_OPTIONS: '--experimental-require-module'
 
   test_esm:
     name: ESM Test
