@@ -94,7 +94,7 @@
     "@types/debug": "4.1.12",
     "@types/jest": "30.0.0",
     "@types/lodash": "4.17.20",
-    "@types/node": "22.18.12",
+    "@types/node": "22.18.13",
     "@typescript-eslint/eslint-plugin": "8.46.2",
     "@typescript-eslint/parser": "8.46.2",
     "babel-jest": "29.7.0",
