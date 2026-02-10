@@ -67,7 +67,7 @@
   },
   "dependencies": {
     "@graphql-tools/url-loader": "^9.0.0",
-    "@graphql-tools/utils": "^10.5.6",
+    "@graphql-tools/utils": "^11.0.0",
     "@types/js-yaml": "^4.0.0",
     "@whatwg-node/fetch": "^0.10.0",
     "chalk": "^4.1.0",
