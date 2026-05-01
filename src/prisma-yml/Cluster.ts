@@ -1,9 +1,8 @@
 import { Buffer } from 'buffer';
-import { createPrivateKey } from 'crypto';
 import chalk from 'chalk';
 import debugPkg from 'debug';
 import { GraphQLClient } from 'graphql-request';
-import { SignJWT } from 'jose';
+import { importPKCS8, SignJWT } from 'jose';
 import { fetch } from '@whatwg-node/fetch';
 import { cloudApiEndpoint } from './constants.js';
 import { IOutput } from './Output.js';
@@ -94,11 +93,13 @@ export class Cluster {
 
       try {
         const algorithm = process.env['PRISMA_MANAGEMENT_API_SECRET'] ? 'HS256' : 'RS256';
+        const key =
+          algorithm === 'HS256' ? Buffer.from(secret) : await importPKCS8(secret, algorithm);
         this.cachedToken = await new SignJWT({ grants })
           .setProtectedHeader({ alg: algorithm, typ: 'JWT' })
           .setExpirationTime('5y')
           .setIssuedAt()
-          .sign(algorithm === 'HS256' ? Buffer.from(secret) : createPrivateKey(secret));
+          .sign(key);
       } catch (e: any) {
         throw new Error(
           `Could not generate token for cluster ${chalk.bold(this.getDeployEndpoint())}.

@@ -5,14 +5,20 @@ const CI = !!process.env.CI;
 
 const ROOT_DIR = fileURLToPath(new URL('./', import.meta.url));
 
-const ESM_PACKAGES = ['graphql'];
+const ESM_PACKAGES = [
+  'graphql',
+  'chalk',
+  'jose',
+  'http-proxy-agent',
+  'https-proxy-agent',
+  'agent-base',
+];
 
 const modulePathIgnorePatterns = ['dist', 'test-assets', 'test-files', 'fixtures', '.bob'];
 
 export default {
   testEnvironment: 'node',
   rootDir: ROOT_DIR,
-  prettierPath: null, // disable prettier for inline snapshots
   restoreMocks: true,
   reporters: ['default'],
   modulePathIgnorePatterns,
