@@ -2,8 +2,12 @@
 
 import { Agent as HttpAgent } from 'http';
 import { Agent as HttpsAgent } from 'https';
-import HttpProxyAgent from 'http-proxy-agent';
-import HttpsProxyAgent from 'https-proxy-agent';
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
+import { HttpProxyAgent } from 'http-proxy-agent';
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
+import { HttpsProxyAgent } from 'https-proxy-agent';
 
 // code from https://raw.githubusercontent.com/request/request/5ba8eb44da7cd639ca21070ea9be20d611b85f66/lib/getProxyFromURI.js
 
