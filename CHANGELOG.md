@@ -1,5 +1,35 @@
 # @graphql-tools/prisma-loader
 
+## 9.0.2
+
+### Patch Changes
+
+- [#115](https://github.com/ardatan/graphql-tools-prisma-loader/pull/115)
+  [`9fec7f0`](https://github.com/ardatan/graphql-tools-prisma-loader/commit/9fec7f0a8b6dfb49dd0b6a98e4a3b11ac06f62dd)
+  Thanks [@renovate](https://github.com/apps/renovate)! - dependencies updates:
+  - Updated dependency
+    [`@graphql-tools/utils@^11.0.0` ↗︎](https://www.npmjs.com/package/@graphql-tools/utils/v/11.0.0)
+    (from `^10.5.6`, in `dependencies`)
+
+- [#154](https://github.com/ardatan/graphql-tools-prisma-loader/pull/154)
+  [`6a73a46`](https://github.com/ardatan/graphql-tools-prisma-loader/commit/6a73a4635dd0046c9d81c0b3d983027353465f50)
+  Thanks [@copilot-swe-agent](https://github.com/apps/copilot-swe-agent)! - dependencies updates:
+  - Updated dependency [`chalk@^5.0.0` ↗︎](https://www.npmjs.com/package/chalk/v/5.0.0) (from
+    `^4.1.0`, in `dependencies`)
+  - Updated dependency [`dotenv@^17.0.0` ↗︎](https://www.npmjs.com/package/dotenv/v/17.0.0) (from
+    `^16.0.0`, in `dependencies`)
+  - Updated dependency
+    [`graphql-request@^7.0.0` ↗︎](https://www.npmjs.com/package/graphql-request/v/7.0.0) (from
+    `^6.0.0`, in `dependencies`)
+  - Updated dependency
+    [`http-proxy-agent@^9.0.0` ↗︎](https://www.npmjs.com/package/http-proxy-agent/v/9.0.0) (from
+    `^7.0.0`, in `dependencies`)
+  - Updated dependency
+    [`https-proxy-agent@^9.0.0` ↗︎](https://www.npmjs.com/package/https-proxy-agent/v/9.0.0) (from
+    `^7.0.0`, in `dependencies`)
+  - Updated dependency [`jose@^6.0.0` ↗︎](https://www.npmjs.com/package/jose/v/6.0.0) (from `^5.0.0`,
+    in `dependencies`)
+
 ## 9.0.1
 
 ### Patch Changes
@@ -196,8 +226,8 @@
   [`944a68e8`](https://github.com/ardatan/graphql-tools/commit/944a68e8becf9c86b4c97fd17c372d98a285b955)
   Thanks [@ardatan](https://github.com/ardatan)! - dependencies updates:
   - Updated dependency
-    [`@whatwg-node/fetch@^0.9.0` ↗︎](https://www.npmjs.com/package/@whatwg-node/fetch/v/0.9.0)
-    (from `^0.8.2`, in `dependencies`)
+    [`@whatwg-node/fetch@^0.9.0` ↗︎](https://www.npmjs.com/package/@whatwg-node/fetch/v/0.9.0) (from
+    `^0.8.2`, in `dependencies`)
 - Updated dependencies
   [[`944a68e8`](https://github.com/ardatan/graphql-tools/commit/944a68e8becf9c86b4c97fd17c372d98a285b955),
   [`944a68e8`](https://github.com/ardatan/graphql-tools/commit/944a68e8becf9c86b4c97fd17c372d98a285b955),
@@ -416,9 +446,8 @@
 - [#4923](https://github.com/ardatan/graphql-tools/pull/4923)
   [`c10d688b`](https://github.com/ardatan/graphql-tools/commit/c10d688b33f1ba46a2269b589cea7bab1b05d283)
   Thanks [@renovate](https://github.com/apps/renovate)! - dependencies updates:
-  - Updated dependency
-    [`jsonwebtoken@^9.0.0` ↗︎](https://www.npmjs.com/package/jsonwebtoken/v/9.0.0) (from `^8.5.1`,
-    in `dependencies`)
+  - Updated dependency [`jsonwebtoken@^9.0.0` ↗︎](https://www.npmjs.com/package/jsonwebtoken/v/9.0.0)
+    (from `^8.5.1`, in `dependencies`)
 
 ## 7.2.48
 
