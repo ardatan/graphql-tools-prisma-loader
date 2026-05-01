@@ -9,6 +9,7 @@
     "module": "esnext",
     "moduleResolution": "node",
     "lib": ["esnext"],
+    "types": ["node", "jest"],
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
     "importHelpers": true,
