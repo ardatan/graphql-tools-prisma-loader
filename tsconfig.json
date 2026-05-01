@@ -2,6 +2,7 @@
   "compilerOptions": {
     "incremental": true,
     "outDir": "dist",
+    "rootDir": "./src",
     "baseUrl": ".",
 
     "target": "es2022",
@@ -16,9 +17,7 @@
     "declaration": true,
     "downlevelIteration": true,
 
-    "suppressImplicitAnyIndexErrors": true,
-
-    "ignoreDeprecations": "5.0",
+    "ignoreDeprecations": "6.0",
 
     "skipLibCheck": true,
 
