@@ -37,7 +37,10 @@ export class PrismaLoader extends UrlLoader {
     return false;
   }
 
-  async load(prismaConfigFilePath: string, options: PrismaLoaderOptions): ReturnType<UrlLoader['load']> {
+  async load(
+    prismaConfigFilePath: string,
+    options: PrismaLoaderOptions,
+  ): ReturnType<UrlLoader['load']> {
     if (!(await this.canLoad(prismaConfigFilePath, options))) {
       return [];
     }
