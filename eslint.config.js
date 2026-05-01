@@ -71,7 +71,7 @@ export default [
               name: 'graphql',
               importNames: ['ExecutionResult', 'ExecutionArgs', 'execute', 'subscribe'],
               message:
-                'Please use `execute` and `subscribe` from `@graphql-tools/executro` instead.',
+                'Please use `execute` and `subscribe` from `@graphql-tools/executor` instead.',
             },
           ],
         },
