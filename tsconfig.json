@@ -16,9 +16,7 @@
     "declaration": true,
     "downlevelIteration": true,
 
-    "suppressImplicitAnyIndexErrors": true,
-
-    "ignoreDeprecations": "5.0",
+    "ignoreDeprecations": "6.0",
 
     "skipLibCheck": true,
 
