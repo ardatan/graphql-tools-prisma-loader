@@ -9,12 +9,7 @@ export class Variables {
   selfRefSyntax = /^self:/g;
   stringRefSyntax = /('.*')|(".*")/g;
   optRefSyntax = /^opt:/g;
-  // eslint-disable-next-line
-  variableSyntax = new RegExp(
-    // eslint-disable-next-line
-    '\\${([ ~:a-zA-Z0-9._\'",\\-\\/\\(\\)]+?)}',
-    'g',
-  );
+  variableSyntax = new RegExp('\\${([ ~:a-zA-Z0-9._\'",\\-\\/\\(\\)]+?)}', 'g');
 
   fileName: string;
   options: Args;
@@ -73,7 +68,7 @@ export class Variables {
             .replace(this.variableSyntax, (_, varName) => varName.trim())
             .replace(/\s/g, '');
 
-          let singleValueToPopulate: Promise<any> | null = null;
+          let singleValueToPopulate: Promise<any>;
           if (variableString.match(this.overwriteSyntax)) {
             singleValueToPopulate = this.overwrite(variableString);
           } else {
@@ -87,7 +82,7 @@ export class Variables {
             );
           }
 
-          singleValueToPopulate = singleValueToPopulate!.then(valueToPopulate => {
+          singleValueToPopulate = singleValueToPopulate.then(valueToPopulate => {
             if (this.warnIfNotFound(variableString, valueToPopulate)) {
               warned = true;
             }

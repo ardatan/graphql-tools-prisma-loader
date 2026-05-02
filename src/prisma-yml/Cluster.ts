@@ -104,6 +104,7 @@ export class Cluster {
         throw new Error(
           `Could not generate token for cluster ${chalk.bold(this.getDeployEndpoint())}.
 Original error: ${e.message}`,
+          { cause: e },
         );
       }
     }

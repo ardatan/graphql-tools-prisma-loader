@@ -49,9 +49,9 @@
   "typings": "dist/typings/index.d.ts",
   "scripts": {
     "build": "bob build --single",
-    "ci:lint": "cross-env \"ESLINT_USE_FLAT_CONFIG=false\" eslint --ext .ts \"./src/**/*.ts\" --output-file eslint_report.json --format json",
+    "ci:lint": "eslint \"./src/**/*.ts\" --output-file eslint_report.json --format json",
     "clean": "rm -rf dist",
-    "lint": "cross-env \"ESLINT_USE_FLAT_CONFIG=false\" eslint --ext .ts \"./src/**/*.ts\"",
+    "lint": "eslint \"./src/**/*.ts\"",
     "postinstall": "patch-package && husky install",
     "prebuild": "yarn clean",
     "prerelease": "yarn build && bob prepack",
@@ -90,6 +90,7 @@
     "@babel/preset-typescript": "7.28.5",
     "@changesets/changelog-github": "0.6.0",
     "@changesets/cli": "2.31.0",
+    "@eslint/js": "10.0.1",
     "@theguild/prettier-config": "3.0.1",
     "@types/debug": "4.1.13",
     "@types/jest": "30.0.0",
@@ -101,7 +102,7 @@
     "bob-the-bundler": "7.0.1",
     "concurrently": "9.2.1",
     "cross-env": "10.1.0",
-    "eslint": "9.39.4",
+    "eslint": "10.2.1",
     "eslint-config-prettier": "10.1.8",
     "eslint-plugin-import": "2.32.0",
     "eslint-plugin-n": "17.24.0",
@@ -128,7 +129,7 @@
   "sideEffects": false,
   "lint-staged": {
     "packages/**/src/**/*.{ts,tsx}": [
-      "cross-env \"ESLINT_USE_FLAT_CONFIG=false\" eslint --fix"
+      "eslint --fix"
     ],
     "**/*.{ts,tsx,graphql,yml,md,mdx,json}": [
       "prettier --write"

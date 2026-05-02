@@ -106,7 +106,6 @@ export class Environment {
               }
             }
           `),
-          // eslint-disable-next-line
           new Promise((_, r) => setTimeout(() => r(), 6000)),
         ])) as any;
         if (!res) {
@@ -232,7 +231,7 @@ export class Environment {
       try {
         content = yaml.load(file);
       } catch (e: any) {
-        throw new Error(`Yaml parsing error in ${filePath}: ${e.message}`);
+        throw new Error(`Yaml parsing error in ${filePath}: ${e.message}`, { cause: e });
       }
       const variables = new Variables(filePath || 'no filepath provided', this.args, this.out);
       content = await variables.populateJson(content);
