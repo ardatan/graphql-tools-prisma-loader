@@ -77,4 +77,5 @@ website/public/sitemap.xml
 website/src/pages/docs/api/
 
 .mise.toml
+.tsbuildinfo
 eslint_report.json
